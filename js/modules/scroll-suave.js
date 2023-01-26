@@ -13,7 +13,6 @@ export default class ScrollSuave {
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
-    console.log(this.options);
     section.scrollIntoView(this.options);
   }
 
