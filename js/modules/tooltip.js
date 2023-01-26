@@ -39,13 +39,13 @@ export default class Tooltip {
   onMouseOver({ currentTarget }) {
     // cria a tooltip box e coloca em uma propriedade
     this.criarTooltipBox(currentTarget);
-    currentTarget.addEventListener('mouseleave', this.onMouseLeave);
     currentTarget.addEventListener('mousemove', this.onMouseMove);
+    currentTarget.addEventListener('mouseleave', this.onMouseLeave);
   }
 
   // adiciona os eventos de mouseover a cada tooltip
   addTooltipsEvent() {
-    this.tootipis.forEach((item) => {
+    this.tooltips.forEach((item) => {
       item.addEventListener('mouseover', this.onMouseOver);
     });
   }
