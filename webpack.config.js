@@ -4,13 +4,13 @@ module.exports = {
   entry: './js/script.js',
   output: {
     path: path.resolve(__dirname, './'),
-    filename: 'main/main.js',
+    filename: './main/main.js',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude : /node_modules/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
