@@ -9,7 +9,8 @@ export default class initModal {
   }
 
   // abre ou fecha o modal
-  toggleModal() {
+  toggleModal(event) {
+    event.preventDefault();
     this.containerModal.classList.toggle('ativo');
   }
 
